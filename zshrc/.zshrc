@@ -15,7 +15,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time Oh My Zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME=""
+ZSH_THEME="robbyrussell"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -81,17 +81,17 @@ plugins=(git zsh-syntax-highlighting zsh-autosuggestions sudo npm node vscode co
 
 source $ZSH/oh-my-zsh.sh
 
-# Pure theme
-fpath+=($HOME/.zsh/pure)
-autoload -U promptinit; promptinit
-prompt pure
-
+## Pure theme
+#fpath+=($HOME/.zsh/pure)
+#autoload -U promptinit; promptinit
+#prompt pure
+# eval "$(starship init zsh)"
 # fm6000
-if [ -x "$(command -v fm6000)" ]; then
-  fm6000 -c blue -f ~/config-files/arch.txt
-  alias clear="clear && fm6000 -c blue -f ~/config-files/arch.txt"
-  alias cls="clear"
-fi
+# if [ -x "$(command -v fm6000)" ]; then
+#   fm6000 -c blue -f ~/config-files/arch.txt
+#   alias clear="clear && fm6000 -c blue -f ~/config-files/arch.txt"
+#   alias cls="clear"
+# fi
 
 # User configuration
 
@@ -126,6 +126,7 @@ if [ -x "$(command -v eza)" ]; then
     alias ls="eza --icons"
     alias la="eza --long --all --group --icons"
     alias l="eza -l --icons"
+    alias tree="eza --tree"
 fi
 
 
@@ -147,7 +148,6 @@ export PATH=$HOME/.local/bin:$PATH
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 alias vi=vim
-alias vim=vim
 
 export GPG_TTY=$(tty)
 
@@ -155,3 +155,5 @@ export PATH=$PATH:~/dev/android-studio/bin
 
 PATH=~/.console-ninja/.bin:$PATH
 
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

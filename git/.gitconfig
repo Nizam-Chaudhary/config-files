@@ -1,7 +1,7 @@
 [user]
 	name = Nizam Chaudhary
 	email = ChaudharyNizam10@gmail.com
-	signingkey =  109B609D1FFC61B3
+	signingkey =  C18F3C5A18424DF1
 [commit]
 	gpgsign = true
 [maintenance]
@@ -12,4 +12,4 @@
 [init]
 	defaultBranch = main
 [pull]
-	rebase = true
+	rebase = false
