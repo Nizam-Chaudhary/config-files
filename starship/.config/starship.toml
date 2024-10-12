@@ -1,0 +1,4 @@
+[nodejs]
+detect_folders = 	['node_modules']
+detect_files = ['package.json', '.node-version']
+detect_extensions = ['js', 'mjs', 'cjs', 'ts', 'mts', 'cts']
