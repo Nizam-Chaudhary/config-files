@@ -77,7 +77,7 @@ ZSH_THEME=""
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-syntax-highlighting zsh-autosuggestions sudo npm node vscode command-not-found)
+plugins=(git zsh-autosuggestions sudo npm node vscode command-not-found)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -159,4 +159,7 @@ export PATH=$PATH:~/dev/android-studio/bin
 PATH=~/.console-ninja/.bin:$PATH
 
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+# [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+# Set up fzf key bindings and fuzzy completion
+source <(fzf --zsh)
+

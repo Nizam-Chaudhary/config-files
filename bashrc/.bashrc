@@ -183,4 +183,6 @@ if [ -x "$(command -v fm6000)" ]; then
   alias cls="clear"
 fi
 
-[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+# [ -f ~/.fzf.bash ] && source ~/.fzf.bash
+eval "$(fzf --bash)"
+
