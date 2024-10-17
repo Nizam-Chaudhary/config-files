@@ -1,7 +1,7 @@
 [user]
 	name = Nizam Chaudhary
 	email = ChaudharyNizam10@gmail.com
-	signingkey = E1F6C9A4220A53FE
+	signingkey = 439B435AB7C24123
 [commit]
 	gpgsign = true
 [maintenance]
