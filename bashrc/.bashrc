@@ -9,10 +9,10 @@ export OSH='/home/nizam/.oh-my-bash'
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-bash is loaded.
-OSH_THEME=""
+OSH_THEME="agnoster"
 
 # starship theme
-eval "$(starship init bash)"
+# eval "$(starship init bash)"
 
 # If you set OSH_THEME to "random", you can ignore themes you don't like.
 # OMB_THEME_RANDOM_IGNORED=("powerbash10k" "wanelo")
@@ -177,12 +177,12 @@ eval "$(stack --bash-completion-script stack)"
 PATH=~/.console-ninja/.bin:$PATH
 
 # fm6000
-if [ -x "$(command -v fm6000)" ]; then
-  fm6000 -c blue -f ~/config-files/arch.txt
-  alias clear="clear && fm6000 -c blue -f ~/config-files/arch.txt"
-  alias cls="clear"
-fi
+# if [ -x "$(command -v fm6000)" ]; then
+#   fm6000 -c blue -f ~/config-files/arch.txt
+#   alias clear="clear && fm6000 -c blue -f ~/config-files/arch.txt"
+#   alias cls="clear"
+# fi
 
-# [ -f ~/.fzf.bash ] && source ~/.fzf.bash
-eval "$(fzf --bash)"
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+# eval "$(fzf --bash)"
 
