@@ -187,5 +187,3 @@ PATH=~/.console-ninja/.bin:$PATH
 # eval "$(fzf --bash)"
 
 source ~/.local/share/blesh/ble.sh
-source ~/.local/share/blesh/ble.sh
-source ~/.local/share/blesh/ble.sh
