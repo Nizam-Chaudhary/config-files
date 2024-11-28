@@ -1,0 +1,15 @@
+[user]
+	name = Nizam Chaudhary
+	email = ChaudharyNizam10@gmail.com
+	signingkey = 15BB97EB9B4B26E7
+[commit]
+	gpgsign = true
+[maintenance]
+	repo = /home/nizam/code/olpgas-backend
+	repo = /home/nizam/dotfiles
+[core]
+	editor = vim
+[init]
+	defaultBranch = main
+[pull]
+	rebase = false
