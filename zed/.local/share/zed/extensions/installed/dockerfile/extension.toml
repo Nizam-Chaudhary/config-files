@@ -1,0 +1,23 @@
+id = "dockerfile"
+name = "Dockerfile"
+version = "0.0.4"
+schema_version = 1
+description = "Dockerfile support."
+repository = "https://github.com/d1y/dockerfile.zed"
+authors = ["d1y <chenhonzho@gmail.com>", "joshmeads <github@joshmeads.com>"]
+themes = []
+languages = ["languages/dockerfile"]
+
+[lib]
+kind = "Rust"
+version = "0.0.4"
+
+[grammars.dockerfile]
+repository = "https://github.com/camdencheek/tree-sitter-dockerfile"
+rev = "868e44ce378deb68aac902a9db68ff82d2299dd0"
+
+[language_servers.dockerfile-language-server]
+language = "Dockerfile"
+languages = []
+
+[language_servers.dockerfile-language-server.language_ids]
