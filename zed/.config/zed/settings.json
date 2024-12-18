@@ -148,5 +148,20 @@
   },
   "chat_panel": {
     "dock": "right"
+  },
+  "format_on_save": "prettier",
+  "prettier": {
+    "allowed": true,
+    "plugins": [],
+    "singleQuote": false,
+    "arrowParens": "always",
+    "jsxSingleQuote": false,
+    "tabWidth": 2,
+    "quoteProps": "as-needed",
+    "singleAttributePerLine": false,
+    "printWidth": 80,
+    "trailingComma": "es5",
+    "semi": true,
+    "useTabs": false
   }
 }
