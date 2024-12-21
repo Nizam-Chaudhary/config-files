@@ -14,7 +14,7 @@
   "theme": {
     "mode": "system",
     "light": "One Light",
-    "dark": "One Dark"
+    "dark": "Rosé Pine"
   },
   "base_keymap": "VSCode",
   // Vim mode settings
@@ -162,6 +162,7 @@
     "printWidth": 80,
     "trailingComma": "es5",
     "semi": true,
-    "useTabs": false
+    "useTabs": false,
+    "bracketSpacing": true
   }
 }

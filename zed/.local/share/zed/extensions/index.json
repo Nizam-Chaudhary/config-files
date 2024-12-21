@@ -105,12 +105,12 @@
               "CSS"
             ],
             "language_ids": {
-              "CSS": "css",
-              "JavaScript": "javascriptreact",
-              "TSX": "typescriptreact",
               "HTML": "html",
+              "PHP": "php",
+              "JavaScript": "javascriptreact",
+              "CSS": "css",
               "ERB": "eruby",
-              "PHP": "php"
+              "TSX": "typescriptreact"
             },
             "code_action_kinds": null
           }
@@ -300,6 +300,37 @@
       },
       "dev": false
     },
+    "poimandres": {
+      "manifest": {
+        "id": "poimandres",
+        "name": "poimandres",
+        "version": "0.0.4",
+        "schema_version": 1,
+        "description": "poimandres themes",
+        "repository": "https://github.com/mshaugh/poimandres.zed",
+        "authors": [
+          "mshaugh <max@mshaugh.com>",
+          "luk4h <luizmarcondes@lgvm.dev>"
+        ],
+        "lib": {
+          "kind": null,
+          "version": null
+        },
+        "themes": [
+          "themes/poimandres-storm.json",
+          "themes/poimandres.json",
+          "themes/poimandres-white.json"
+        ],
+        "languages": [],
+        "grammars": {},
+        "language_servers": {},
+        "context_servers": {},
+        "slash_commands": {},
+        "indexed_docs_providers": {},
+        "snippets": null
+      },
+      "dev": false
+    },
     "sql": {
       "manifest": {
         "id": "sql",
@@ -338,7 +369,36 @@
       "dev": false
     }
   },
-  "themes": {},
+  "themes": {
+    "poimandres": {
+      "extension": "poimandres",
+      "path": "themes/poimandres.json"
+    },
+    "poimandres (no italics)": {
+      "extension": "poimandres",
+      "path": "themes/poimandres.json"
+    },
+    "poimandres blurry": {
+      "extension": "poimandres",
+      "path": "themes/poimandres.json"
+    },
+    "poimandres storm": {
+      "extension": "poimandres",
+      "path": "themes/poimandres-storm.json"
+    },
+    "poimandres storm (no italics)": {
+      "extension": "poimandres",
+      "path": "themes/poimandres-storm.json"
+    },
+    "poimandres white": {
+      "extension": "poimandres",
+      "path": "themes/poimandres-white.json"
+    },
+    "poimandres white (no italics)": {
+      "extension": "poimandres",
+      "path": "themes/poimandres-white.json"
+    }
+  },
   "languages": {
     "Diff": {
       "extension": "git-firefly",
