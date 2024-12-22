@@ -183,7 +183,7 @@ alias vim=vim
 
 export PATH=$PATH:~/dev/android-studio/bin
 
-eval "$(stack --bash-completion-script stack)"
+# eval "$(stack --bash-completion-script stack)"
 PATH=~/.console-ninja/.bin:$PATH
 
 # fm6000
