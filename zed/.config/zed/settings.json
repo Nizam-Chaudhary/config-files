@@ -7,6 +7,10 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+    "show_inline_completions": true,
+    "features": {
+        "inline_completion_provider": "supermaven"
+    },
     "ui_font_size": 18,
     "buffer_font_size": 18,
     "ui_font_family": "JetBrainsMono Nerd Font",
@@ -169,5 +173,8 @@
         "semi": true,
         "useTabs": false,
         "bracketSpacing": true
+    },
+    "snippets": {
+        "enabled": true
     }
 }
