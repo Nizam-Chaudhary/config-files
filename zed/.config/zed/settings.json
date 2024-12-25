@@ -11,14 +11,14 @@
     "features": {
         "inline_completion_provider": "supermaven"
     },
-    "ui_font_size": 14,
-    "buffer_font_size": 14,
-    "ui_font_family": "CaskaydiaCove Nerd Font",
-    "buffer_font_family": "JetBrainsMono Nerd Font",
+    "ui_font_size": 20,
+    "buffer_font_size": 18,
+    "ui_font_family": "CaskaydiaCove Nerd Font Mono",
+    "buffer_font_family": "CaskaydiaCove Nerd Font Mono",
     "theme": {
         "mode": "system",
         "light": "Catppuccin Mocha",
-        "dark": "Rosé Pine"
+        "dark": "Catppuccin Mocha"
     },
     "base_keymap": "VSCode",
     // Vim mode settings
@@ -102,8 +102,8 @@
         "env": {
             "EDITOR": "zed --wait"
         },
-        "font_size": 14,
-        "font_family": "CaskaydiaCove Nerd Font"
+        "font_size": 18,
+        "font_family": "CaskaydiaCove Nerd Font Mono"
     },
     // File syntax highlighting
     "file_types": {
