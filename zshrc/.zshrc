@@ -74,7 +74,7 @@ eval "$(starship init zsh)"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions sudo npm node vscode command-not-found docker docker-compose yarn)
+plugins=(git zsh-autosuggestions eza sudo npm node vscode command-not-found docker docker-compose yarn archlinux)
 
 source $ZSH/oh-my-zsh.sh
 
