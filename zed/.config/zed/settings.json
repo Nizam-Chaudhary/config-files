@@ -9,7 +9,7 @@
 {
     "show_inline_completions": true,
     "features": {
-        "inline_completion_provider": "supermaven"
+        "inline_completion_provider": "copilot"
     },
     "ui_font_size": 20,
     "buffer_font_size": 18,
@@ -32,7 +32,7 @@
     // Vim mode settings
     "vim_mode": false,
     // use relative line numbers
-    "relative_line_numbers": true,
+    "relative_line_numbers": false,
     "tab_bar": {
         "show": true
     },
@@ -74,7 +74,7 @@
     },
     // Inlay hints preconfigured by Zed: Go, Rust, Typescript and Svelte
     "inlay_hints": {
-        "enabled": true
+        "enabled": false
     },
     // LSP
     "lsp": {
