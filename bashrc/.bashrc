@@ -193,7 +193,9 @@ PATH=~/.console-ninja/.bin:$PATH
 #   alias cls="clear"
 # fi
 
-# [ -f ~/.fzf.bash ] && source ~/.fzf.bash
-eval "$(fzf --bash)"
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+# eval "$(fzf --bash)"
 
 # source ~/.local/share/blesh/ble.sh
+
+#[ -f ~/.fzf.bash ] && source ~/.fzf.bash
