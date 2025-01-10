@@ -9,10 +9,10 @@ export OSH='/home/nizam/.oh-my-bash'
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-bash is loaded.
-# OSH_THEME="agnoster"
+OSH_THEME="agnoster"
 
 # starship theme
-eval "$(starship init bash)"
+# eval "$(starship init bash)"
 
 # If you set OSH_THEME to "random", you can ignore themes you don't like.
 # OMB_THEME_RANDOM_IGNORED=("powerbash10k" "wanelo")
@@ -181,10 +181,10 @@ export PATH=$HOME/.local/bin:$PATH
 alias vi=vim
 alias vim=vim
 
-export PATH=$PATH:~/dev/android-studio/bin
+# export PATH=$PATH:~/dev/android-studio/bin
 
 # eval "$(stack --bash-completion-script stack)"
-PATH=~/.console-ninja/.bin:$PATH
+# PATH=~/.console-ninja/.bin:$PATH
 
 # fm6000
 # if [ -x "$(command -v fm6000)" ]; then
@@ -193,8 +193,8 @@ PATH=~/.console-ninja/.bin:$PATH
 #   alias cls="clear"
 # fi
 
-[ -f ~/.fzf.bash ] && source ~/.fzf.bash
-# eval "$(fzf --bash)"
+# [ -f ~/.fzf.bash ] && source ~/.fzf.bash
+eval "$(fzf --bash)"
 
 # source ~/.local/share/blesh/ble.sh
 

@@ -5,14 +5,14 @@
 export ZSH="$HOME/.oh-my-zsh"
 
 # starship prompt
-eval "$(starship init zsh)"
+# eval "$(starship init zsh)"
 
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time Oh My Zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-# ZSH_THEME="agnoster"
+ZSH_THEME="robbyrussell"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -119,24 +119,24 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-if [ -x "$(command -v eza)" ]; then
-    alias ls="eza --icons"
-    alias la="eza --long --all --group --icons"
-    alias l="eza -l --icons"
-    alias tree="eza --tree"
-fi
+# if [ -x "$(command -v eza)" ]; then
+#     alias ls="eza --icons"
+#     alias la="eza --long --all --group --icons"
+#     alias l="eza -l --icons"
+#     alias tree="eza --tree"
+# fi
 
-if [ -x "$(command -v exa)" ]; then
-    alias ls="exa --icons"
-    alias la="exa --long --all --group --icons"
-    alias l="exa -l --icons"
-    alias tree="exa --tree"
-fi
+# if [ -x "$(command -v exa)" ]; then
+#     alias ls="exa --icons"
+#     alias la="exa --long --all --group --icons"
+#     alias l="exa -l --icons"
+#     alias tree="exa --tree"
+# fi
 
-if [ -x "$(command -v gnome-text-editor)" ]; then
-    alias note="gnome-text-editor"
-    alias text="gnome-text-editor"
-fi
+# if [ -x "$(command -v gnome-text-editor)" ]; then
+#     alias note="gnome-text-editor"
+#     alias text="gnome-text-editor"
+# fi
 
 bindkey ^H backward-delete-word
 
@@ -148,20 +148,20 @@ export GPG_TTY=$(tty)
 export PATH=$HOME/.local/bin:$PATH
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+# [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 alias vi=vim
 
 export GPG_TTY=$(tty)
 
-export PATH=$PATH:~/dev/android-studio/bin
+# export PATH=$PATH:~/dev/android-studio/bin
 
-PATH=~/.console-ninja/.bin:$PATH
+# PATH=~/.console-ninja/.bin:$PATH
 
 
 # Set up fzf key bindings and fuzzy completion
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-# source <(fzf --zsh)
+# [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+source <(fzf --zsh)
 
 # pnpm
 export PNPM_HOME="/home/nizam/.local/share/pnpm"
@@ -170,5 +170,3 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
-
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

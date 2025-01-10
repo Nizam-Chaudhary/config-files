@@ -1,5 +1,7 @@
 theme = catppuccin-mocha
 font-family = JetBrainsMono Nerd Font Mono 
-font-size = 15
+font-size = 12
 background-opacity = 0.95
-gtk-titlebar = true 
+# for kde
+gtk-titlebar = false
+gtk-adwaita = false
