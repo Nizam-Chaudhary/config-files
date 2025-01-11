@@ -135,11 +135,11 @@
             ],
             "language_ids": {
               "TSX": "typescriptreact",
-              "HTML": "html",
-              "CSS": "css",
               "JavaScript": "javascriptreact",
-              "PHP": "php",
-              "ERB": "eruby"
+              "CSS": "css",
+              "HTML": "html",
+              "ERB": "eruby",
+              "PHP": "php"
             },
             "code_action_kinds": null
           }
@@ -280,8 +280,8 @@
             "language": "HTML",
             "languages": [],
             "language_ids": {
-              "CSS": "css",
-              "HTML": "html"
+              "HTML": "html",
+              "CSS": "css"
             },
             "code_action_kinds": null
           }

@@ -90,7 +90,7 @@
             // Refer https://github.com/jellydn/ts-inlay-hints for how to setup for Neovim and VSCode
             "inlay_hints": {
                 "enabled": false,
-                "show_parameter_hints": false,
+                "show_parameter_hints": true,
                 "show_other_hints": true,
                 "show_type_hints": true
             },
@@ -122,8 +122,8 @@
         "**/.settings",
         // above is default from Zed
         "**/out",
-        "**/dist",
-        "**/.husky",
+        // "**/dist",
+        // "**/.husky",
         "**/.turbo",
         "**/.vscode-test",
         "**/.vscode",
@@ -131,8 +131,8 @@
         "**/.storybook",
         "**/.tap",
         "**/.nyc_output",
-        "**/report",
-        "**/node_modules"
+        "**/report"
+        // "**/node_modules"
     ],
     // Turn off telemetry
     "telemetry": {
