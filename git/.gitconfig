@@ -4,9 +4,6 @@
 	signingkey = 15BB97EB9B4B26E7
 [commit]
 	gpgsign = true
-[maintenance]
-	repo = /home/nizam/code/olpgas-backend
-	repo = /home/nizam/dotfiles
 [core]
 	editor = vim
 [init]
