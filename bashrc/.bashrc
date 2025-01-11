@@ -156,18 +156,18 @@ if [ -x "$(command -v eza)" ]; then
 fi
 
 
-if [ -x "$(command -v exa)" ]; then
-    alias ls="exa --icons"
-    alias la="exa --long --all --group --icons"
-    alias l="exa -l --icons"
-    alias tree="exa --tree"
-fi
+# if [ -x "$(command -v exa)" ]; then
+#     alias ls="exa --icons"
+#     alias la="exa --long --all --group --icons"
+#     alias l="exa -l --icons"
+#     alias tree="exa --tree"
+# fi
 
 # alias for gnome-text-editor
-if [ -x "$(command -v gnome-text-editor)" ]; then
-    alias note="gnome-text-editor"
-    alias text="gnome-text-editor"
-fi
+# if [ -x "$(command -v gnome-text-editor)" ]; then
+#     alias note="gnome-text-editor"
+#     alias text="gnome-text-editor"
+# fi
 
 # for node
 export NVM_DIR="$HOME/.nvm"
@@ -193,9 +193,7 @@ alias vim=vim
 #   alias cls="clear"
 # fi
 
-# [ -f ~/.fzf.bash ] && source ~/.fzf.bash
-eval "$(fzf --bash)"
+# eval "$(fzf --bash)"
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
 # source ~/.local/share/blesh/ble.sh
-
-#[ -f ~/.fzf.bash ] && source ~/.fzf.bash
