@@ -9,7 +9,7 @@
 {
     "show_inline_completions": true,
     "features": {
-        "inline_completion_provider": "copilot"
+        "inline_completion_provider": "supermaven"
     },
     "ui_font_size": 16,
     "buffer_font_size": 16,

@@ -4,7 +4,7 @@
       "manifest": {
         "id": "catppuccin",
         "name": "Catppuccin",
-        "version": "0.2.18",
+        "version": "0.2.19",
         "schema_version": 1,
         "description": "🦀 Soothing pastel theme for Zed",
         "repository": "https://github.com/catppuccin/zed",
@@ -134,12 +134,12 @@
               "CSS"
             ],
             "language_ids": {
-              "HTML": "html",
-              "JavaScript": "javascriptreact",
-              "PHP": "php",
-              "CSS": "css",
               "TSX": "typescriptreact",
-              "ERB": "eruby"
+              "PHP": "php",
+              "JavaScript": "javascriptreact",
+              "ERB": "eruby",
+              "HTML": "html",
+              "CSS": "css"
             },
             "code_action_kinds": null
           }

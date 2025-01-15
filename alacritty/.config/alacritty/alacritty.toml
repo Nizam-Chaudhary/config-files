@@ -7,7 +7,7 @@ padding = { x = 8 , y = 8 }
 dynamic_padding = true
 decorations = "Transparent"
 opacity = 0.90
-startup_mode = "Maximized"
+# startup_mode = "normal"
 
 [font]
 size = 12.0
