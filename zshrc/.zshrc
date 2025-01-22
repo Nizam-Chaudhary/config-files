@@ -160,8 +160,8 @@ export GPG_TTY=$(tty)
 
 
 # Set up fzf key bindings and fuzzy completion
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-# source <(fzf --zsh)
+# [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+source <(fzf --zsh)
 
 # pnpm
 export PNPM_HOME="/home/nizam/.local/share/pnpm"

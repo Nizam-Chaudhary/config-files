@@ -44,7 +44,7 @@
         "enabled": true,
         "coloring": "indent_aware"
     },
-    "tab_size": 4,
+    "tab_size": 2,
     // NOTE: Zen mode, refer https://github.com/zed-industries/zed/issues/4382 when it's resolved
     "centered_layout": {
         "left_padding": 0.15,
@@ -165,7 +165,7 @@
         "singleQuote": false,
         "arrowParens": "always",
         "jsxSingleQuote": false,
-        "tabWidth": 4,
+        "tabWidth": 2,
         "quoteProps": "as-needed",
         "singleAttributePerLine": false,
         "printWidth": 80,
