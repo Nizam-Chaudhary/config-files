@@ -134,12 +134,12 @@
               "CSS"
             ],
             "language_ids": {
-              "ERB": "eruby",
-              "HTML": "html",
-              "JavaScript": "javascriptreact",
-              "TSX": "typescriptreact",
               "CSS": "css",
-              "PHP": "php"
+              "ERB": "eruby",
+              "PHP": "php",
+              "TSX": "typescriptreact",
+              "JavaScript": "javascriptreact",
+              "HTML": "html"
             },
             "code_action_kinds": null
           }
@@ -253,7 +253,7 @@
       "manifest": {
         "id": "html",
         "name": "HTML",
-        "version": "0.1.4",
+        "version": "0.1.5",
         "schema_version": 1,
         "description": "HTML support.",
         "repository": "https://github.com/zed-industries/zed",
@@ -280,8 +280,8 @@
             "language": "HTML",
             "languages": [],
             "language_ids": {
-              "CSS": "css",
-              "HTML": "html"
+              "HTML": "html",
+              "CSS": "css"
             },
             "code_action_kinds": null
           }

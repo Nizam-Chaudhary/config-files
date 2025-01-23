@@ -1,0 +1,3 @@
+#! /bin/bash
+
+aria2c -d ~/Downloads/aria2c -x 16 -s 16 --file-allocation=falloc "$1"
