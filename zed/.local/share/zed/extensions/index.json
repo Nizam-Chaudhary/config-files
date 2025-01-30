@@ -134,10 +134,10 @@
               "CSS"
             ],
             "language_ids": {
-              "CSS": "css",
-              "ERB": "eruby",
               "PHP": "php",
               "TSX": "typescriptreact",
+              "CSS": "css",
+              "ERB": "eruby",
               "JavaScript": "javascriptreact",
               "HTML": "html"
             },

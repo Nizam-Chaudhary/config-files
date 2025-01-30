@@ -74,7 +74,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions eza sudo npm node vscode command-not-found docker docker-compose archlinux)
+plugins=(git zsh-autosuggestions eza sudo npm node vscode command-not-found docker docker-compose archlinux dnf)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -160,8 +160,8 @@ export GPG_TTY=$(tty)
 
 
 # Set up fzf key bindings and fuzzy completion
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-# source <(fzf --zsh)
+# [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+source <(fzf --zsh)
 
 # pnpm
 export PNPM_HOME="/home/nizam/.local/share/pnpm"
