@@ -10,18 +10,21 @@ export ZSH="$HOME/.oh-my-zsh"
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="robbyrussell"
 
+# Uncomment the following line if pasting URLs and other text is messed up.
+DISABLE_MAGIC_FUNCTIONS="true"
+
 zstyle ':omz:update' mode auto      # update automatically without asking
 
 zstyle ':omz:update' frequency 7
 
 # Uncomment the following line to enable command auto-correction.
-# ENABLE_CORRECTION="true"
+ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 # You can also set it to another string to have that shown instead of the default red dots.
 # e.g. COMPLETION_WAITING_DOTS="%F{yellow}waiting...%f"
 # Caution: this setting can cause issues with multiline prompts in zsh < 5.7.1 (see #5765)
-# COMPLETION_WAITING_DOTS="true"
+COMPLETION_WAITING_DOTS="true"
 
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
@@ -29,9 +32,47 @@ zstyle ':omz:update' frequency 7
 DISABLE_UNTRACKED_FILES_DIRTY="true"
 
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions sudo npm node docker docker-compose)
+plugins=(git fzf extract eza sudo npm yarn node docker docker-compose)
 
 source $ZSH/oh-my-zsh.sh
+
+# Ignore commands that start with spaces and duplicates.
+export HISTCONTROL=ignoreboth
+
+# Don't add certain commands to the history file.
+export HISTIGNORE="&:[bf]g:c:clear:history:exit:q:pwd:* --help"s
+
+# Use custom `less` colors for `man` pages.
+export LESS_TERMCAP_md="$(tput bold 2> /dev/null; tput setaf 2 2> /dev/null)"
+export LESS_TERMCAP_me="$(tput sgr0 2> /dev/null)"
+
+# Set personal aliases, overriding those provided by oh-my-zsh libs,
+# plugins, and themes. Aliases can be placed here, though oh-my-zsh
+# users are encouraged to define aliases within the ZSH_CUSTOM folder.
+#alias open="xdg-open"
+alias make="make -j`nproc`"
+alias ninja="ninja -j`nproc`"
+alias n="ninja"
+alias c="clear"
+alias rmpkg="sudo pacman -Rsn"
+alias cleanch="sudo pacman -Scc"
+alias fixpacman="sudo rm /var/lib/pacman/db.lck"
+alias update="sudo pacman -Syu"
+
+# Fish-like syntax highlighting and autosuggestions
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+# Use history substring search
+source /usr/share/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
+
+# pkgfile "command not found" handler
+source /usr/share/doc/pkgfile/command-not-found.zsh
+
+
+# Make new shells get the history lines from all previous
+# shells instead of the default "last window closed" history.
+export PROMPT_COMMAND="history -a; $PROMPT_COMMAND"
 
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
@@ -58,7 +99,7 @@ export GPG_TTY=$(tty)
 
 # Set up fzf key bindings and fuzzy completion
 # [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-source <(fzf --zsh)
+# source <(fzf --zsh)
 
 # pnpm
 export PNPM_HOME="/home/nizam/.local/share/pnpm"

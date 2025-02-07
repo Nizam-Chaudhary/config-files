@@ -4,7 +4,7 @@
       "manifest": {
         "id": "catppuccin",
         "name": "Catppuccin",
-        "version": "0.2.19",
+        "version": "0.2.20",
         "schema_version": 1,
         "description": "🦀 Soothing pastel theme for Zed",
         "repository": "https://github.com/catppuccin/zed",
@@ -19,6 +19,7 @@
           "themes/catppuccin-no-italics-mauve.json",
           "themes/catppuccin-mauve.json"
         ],
+        "icon_themes": [],
         "languages": [],
         "grammars": {},
         "language_servers": {},
@@ -45,6 +46,7 @@
           "version": "0.0.6"
         },
         "themes": [],
+        "icon_themes": [],
         "languages": [],
         "grammars": {},
         "language_servers": {
@@ -79,6 +81,7 @@
           "version": "0.0.4"
         },
         "themes": [],
+        "icon_themes": [],
         "languages": [
           "languages/dockerfile"
         ],
@@ -120,6 +123,7 @@
           "version": "0.0.4"
         },
         "themes": [],
+        "icon_themes": [],
         "languages": [],
         "grammars": {},
         "language_servers": {
@@ -134,12 +138,12 @@
               "CSS"
             ],
             "language_ids": {
-              "PHP": "php",
               "TSX": "typescriptreact",
-              "CSS": "css",
-              "ERB": "eruby",
+              "HTML": "html",
               "JavaScript": "javascriptreact",
-              "HTML": "html"
+              "PHP": "php",
+              "CSS": "css",
+              "ERB": "eruby"
             },
             "code_action_kinds": null
           }
@@ -167,6 +171,7 @@
           "version": null
         },
         "themes": [],
+        "icon_themes": [],
         "languages": [
           "languages/env"
         ],
@@ -201,6 +206,7 @@
           "version": null
         },
         "themes": [],
+        "icon_themes": [],
         "languages": [
           "languages/gitconfig",
           "languages/diff",
@@ -265,6 +271,7 @@
           "version": "0.1.0"
         },
         "themes": [],
+        "icon_themes": [],
         "languages": [
           "languages/html"
         ],
@@ -280,8 +287,8 @@
             "language": "HTML",
             "languages": [],
             "language_ids": {
-              "HTML": "html",
-              "CSS": "css"
+              "CSS": "css",
+              "HTML": "html"
             },
             "code_action_kinds": null
           }
@@ -311,6 +318,7 @@
           "version": null
         },
         "themes": [],
+        "icon_themes": [],
         "languages": [
           "languages/log"
         ],
@@ -350,6 +358,7 @@
           "themes/poimandres.json",
           "themes/poimandres-white.json"
         ],
+        "icon_themes": [],
         "languages": [],
         "grammars": {},
         "language_servers": {},
@@ -379,6 +388,7 @@
           "version": null
         },
         "themes": [],
+        "icon_themes": [],
         "languages": [
           "languages/sql"
         ],
@@ -414,6 +424,7 @@
           "version": "0.1.0"
         },
         "themes": [],
+        "icon_themes": [],
         "languages": [
           "languages/toml"
         ],
@@ -502,6 +513,7 @@
       "path": "themes/poimandres-white.json"
     }
   },
+  "icon_themes": {},
   "languages": {
     "Diff": {
       "extension": "git-firefly",
