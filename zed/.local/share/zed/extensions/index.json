@@ -1,35 +1,5 @@
 {
   "extensions": {
-    "catppuccin": {
-      "manifest": {
-        "id": "catppuccin",
-        "name": "Catppuccin",
-        "version": "0.2.20",
-        "schema_version": 1,
-        "description": "🦀 Soothing pastel theme for Zed",
-        "repository": "https://github.com/catppuccin/zed",
-        "authors": [
-          "Catppuccin <releases@catppuccin.dev>"
-        ],
-        "lib": {
-          "kind": null,
-          "version": null
-        },
-        "themes": [
-          "themes/catppuccin-no-italics-mauve.json",
-          "themes/catppuccin-mauve.json"
-        ],
-        "icon_themes": [],
-        "languages": [],
-        "grammars": {},
-        "language_servers": {},
-        "context_servers": {},
-        "slash_commands": {},
-        "indexed_docs_providers": {},
-        "snippets": null
-      },
-      "dev": false
-    },
     "docker-compose": {
       "manifest": {
         "id": "docker-compose",
@@ -138,11 +108,11 @@
               "CSS"
             ],
             "language_ids": {
-              "TSX": "typescriptreact",
-              "HTML": "html",
-              "JavaScript": "javascriptreact",
-              "PHP": "php",
               "CSS": "css",
+              "JavaScript": "javascriptreact",
+              "TSX": "typescriptreact",
+              "PHP": "php",
+              "HTML": "html",
               "ERB": "eruby"
             },
             "code_action_kinds": null
@@ -255,6 +225,36 @@
       },
       "dev": false
     },
+    "github-theme": {
+      "manifest": {
+        "id": "github-theme",
+        "name": "Github Theme",
+        "version": "0.1.3",
+        "schema_version": 1,
+        "description": "GitHub themes for Zed",
+        "repository": "https://github.com/PyaeSoneAungRgn/github-zed-theme",
+        "authors": [
+          "Pyae Sone Aung <pyaesoneaungrgn@gmail.com>",
+          "Clay Tercek"
+        ],
+        "lib": {
+          "kind": null,
+          "version": null
+        },
+        "themes": [
+          "themes/github_theme.json"
+        ],
+        "icon_themes": [],
+        "languages": [],
+        "grammars": {},
+        "language_servers": {},
+        "context_servers": {},
+        "slash_commands": {},
+        "indexed_docs_providers": {},
+        "snippets": null
+      },
+      "dev": false
+    },
     "html": {
       "manifest": {
         "id": "html",
@@ -287,8 +287,8 @@
             "language": "HTML",
             "languages": [],
             "language_ids": {
-              "CSS": "css",
-              "HTML": "html"
+              "HTML": "html",
+              "CSS": "css"
             },
             "code_action_kinds": null
           }
@@ -337,28 +337,25 @@
       },
       "dev": false
     },
-    "poimandres": {
+    "material-icon-theme": {
       "manifest": {
-        "id": "poimandres",
-        "name": "poimandres",
-        "version": "0.0.4",
+        "id": "material-icon-theme",
+        "name": "Material Icon Theme",
+        "version": "0.1.2",
         "schema_version": 1,
-        "description": "poimandres themes",
-        "repository": "https://github.com/mshaugh/poimandres.zed",
+        "description": "Material Design icons.",
+        "repository": "https://github.com/zed-extensions/material-icon-theme",
         "authors": [
-          "mshaugh <max@mshaugh.com>",
-          "luk4h <luizmarcondes@lgvm.dev>"
+          "Zed Industries <support@zed.dev>"
         ],
         "lib": {
           "kind": null,
           "version": null
         },
-        "themes": [
-          "themes/poimandres-storm.json",
-          "themes/poimandres.json",
-          "themes/poimandres-white.json"
+        "themes": [],
+        "icon_themes": [
+          "icon_themes/material-icon-theme.json"
         ],
-        "icon_themes": [],
         "languages": [],
         "grammars": {},
         "language_servers": {},
@@ -452,68 +449,49 @@
     }
   },
   "themes": {
-    "Catppuccin Frappé": {
-      "extension": "catppuccin",
-      "path": "themes/catppuccin-mauve.json"
+    "Github Dark": {
+      "extension": "github-theme",
+      "path": "themes/github_theme.json"
     },
-    "Catppuccin Frappé - No Italics": {
-      "extension": "catppuccin",
-      "path": "themes/catppuccin-no-italics-mauve.json"
+    "Github Dark Colorblind": {
+      "extension": "github-theme",
+      "path": "themes/github_theme.json"
     },
-    "Catppuccin Latte": {
-      "extension": "catppuccin",
-      "path": "themes/catppuccin-mauve.json"
+    "Github Dark Dimmed": {
+      "extension": "github-theme",
+      "path": "themes/github_theme.json"
     },
-    "Catppuccin Latte - No Italics": {
-      "extension": "catppuccin",
-      "path": "themes/catppuccin-no-italics-mauve.json"
+    "Github Dark High Contrast": {
+      "extension": "github-theme",
+      "path": "themes/github_theme.json"
     },
-    "Catppuccin Macchiato": {
-      "extension": "catppuccin",
-      "path": "themes/catppuccin-mauve.json"
+    "Github Dark Tritanopia": {
+      "extension": "github-theme",
+      "path": "themes/github_theme.json"
     },
-    "Catppuccin Macchiato - No Italics": {
-      "extension": "catppuccin",
-      "path": "themes/catppuccin-no-italics-mauve.json"
+    "Github Light": {
+      "extension": "github-theme",
+      "path": "themes/github_theme.json"
     },
-    "Catppuccin Mocha": {
-      "extension": "catppuccin",
-      "path": "themes/catppuccin-mauve.json"
+    "Github Light Colorblind": {
+      "extension": "github-theme",
+      "path": "themes/github_theme.json"
     },
-    "Catppuccin Mocha - No Italics": {
-      "extension": "catppuccin",
-      "path": "themes/catppuccin-no-italics-mauve.json"
+    "Github Light High Contrast": {
+      "extension": "github-theme",
+      "path": "themes/github_theme.json"
     },
-    "poimandres": {
-      "extension": "poimandres",
-      "path": "themes/poimandres.json"
-    },
-    "poimandres (no italics)": {
-      "extension": "poimandres",
-      "path": "themes/poimandres.json"
-    },
-    "poimandres blurry": {
-      "extension": "poimandres",
-      "path": "themes/poimandres.json"
-    },
-    "poimandres storm": {
-      "extension": "poimandres",
-      "path": "themes/poimandres-storm.json"
-    },
-    "poimandres storm (no italics)": {
-      "extension": "poimandres",
-      "path": "themes/poimandres-storm.json"
-    },
-    "poimandres white": {
-      "extension": "poimandres",
-      "path": "themes/poimandres-white.json"
-    },
-    "poimandres white (no italics)": {
-      "extension": "poimandres",
-      "path": "themes/poimandres-white.json"
+    "Github Light Tritanopia": {
+      "extension": "github-theme",
+      "path": "themes/github_theme.json"
     }
   },
-  "icon_themes": {},
+  "icon_themes": {
+    "Material Icon Theme": {
+      "extension": "material-icon-theme",
+      "path": "icon_themes/material-icon-theme.json"
+    }
+  },
   "languages": {
     "Diff": {
       "extension": "git-firefly",

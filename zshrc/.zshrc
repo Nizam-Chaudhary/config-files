@@ -54,10 +54,10 @@ alias make="make -j`nproc`"
 alias ninja="ninja -j`nproc`"
 alias n="ninja"
 alias c="clear"
-alias rmpkg="sudo pacman -Rsn"
-alias cleanch="sudo pacman -Scc"
-alias fixpacman="sudo rm /var/lib/pacman/db.lck"
-alias update="sudo pacman -Syu"
+# alias rmpkg="sudo pacman -Rsn"
+# alias cleanch="sudo pacman -Scc"
+# alias fixpacman="sudo rm /var/lib/pacman/db.lck"
+# alias update="sudo pacman -Syu"
 
 # Fish-like syntax highlighting and autosuggestions
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
@@ -67,7 +67,7 @@ source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/share/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
 
 # pkgfile "command not found" handler
-source /usr/share/doc/pkgfile/command-not-found.zsh
+# source /usr/share/doc/pkgfile/command-not-found.zsh
 
 
 # Make new shells get the history lines from all previous
