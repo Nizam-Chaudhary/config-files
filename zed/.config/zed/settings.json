@@ -34,7 +34,10 @@
   "terminal": {
     "external": {
       "command": "kitty",
-      "args": ["--directory", "{cwd}"]
+      "args": [
+        "--directory",
+        "{cwd}"
+      ]
     },
     "env": {
       "EDITOR": "zed --wait"
@@ -44,8 +47,8 @@
   },
   "theme": {
     "mode": "system",
-    "light": "Github Light",
-    "dark": "Github Dark"
+    "light": "One Light",
+    "dark": "One Dark"
   },
   "base_keymap": "VSCode",
   // Vim mode settings
@@ -99,7 +102,12 @@
   "lsp": {
     "tailwindcss-language-server": {
       "settings": {
-        "classAttributes": ["class", "className", "ngClass", "styles"]
+        "classAttributes": [
+          "class",
+          "className",
+          "ngClass",
+          "styles"
+        ]
       }
     }
   },
@@ -119,15 +127,33 @@
       }
     },
     "Python": {
-      "format_on_save": { "language_server": { "name": "ruff" } },
-      "formatter": { "language_server": { "name": "ruff" } },
-      "language_servers": ["pyright", "ruff"]
+      "format_on_save": {
+        "language_server": {
+          "name": "ruff"
+        }
+      },
+      "formatter": {
+        "language_server": {
+          "name": "ruff"
+        }
+      },
+      "language_servers": [
+        "pyright",
+        "ruff"
+      ]
     }
   },
   // File syntax highlighting
   "file_types": {
-    "Dockerfile": ["Dockerfile", "Dockerfile.*"],
-    "JSON": ["json", "jsonc", "*.code-snippets"]
+    "Dockerfile": [
+      "Dockerfile",
+      "Dockerfile.*"
+    ],
+    "JSON": [
+      "json",
+      "jsonc",
+      "*.code-snippets"
+    ]
   },
   // File scan exclusions, hide on the file explorer and search
   "file_scan_exclusions": [
@@ -145,7 +171,7 @@
     // "**/.husky",
     "**/.turbo",
     "**/.vscode-test",
-    "**/.vscode",
+    // "**/.vscode",
     "**/.next",
     "**/.storybook",
     "**/.tap",
