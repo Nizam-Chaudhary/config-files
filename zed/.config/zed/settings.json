@@ -19,7 +19,7 @@
       ".husky/**/*",
       ".storybook/**/*"
     ],
-    "mode": "eager_preview"
+    "mode": "subtle"
   },
   "icon_theme": "Material Icon Theme",
   "show_edit_predictions": true,
@@ -34,10 +34,7 @@
   "terminal": {
     "external": {
       "command": "kitty",
-      "args": [
-        "--directory",
-        "{cwd}"
-      ]
+      "args": ["--directory", "{cwd}"]
     },
     "env": {
       "EDITOR": "zed --wait"
@@ -102,12 +99,7 @@
   "lsp": {
     "tailwindcss-language-server": {
       "settings": {
-        "classAttributes": [
-          "class",
-          "className",
-          "ngClass",
-          "styles"
-        ]
+        "classAttributes": ["class", "className", "ngClass", "styles"]
       }
     }
   },
@@ -137,23 +129,13 @@
           "name": "ruff"
         }
       },
-      "language_servers": [
-        "pyright",
-        "ruff"
-      ]
+      "language_servers": ["pyright", "ruff"]
     }
   },
   // File syntax highlighting
   "file_types": {
-    "Dockerfile": [
-      "Dockerfile",
-      "Dockerfile.*"
-    ],
-    "JSON": [
-      "json",
-      "jsonc",
-      "*.code-snippets"
-    ]
+    "Dockerfile": ["Dockerfile", "Dockerfile.*"],
+    "JSON": ["json", "jsonc", "*.code-snippets"]
   },
   // File scan exclusions, hide on the file explorer and search
   "file_scan_exclusions": [
